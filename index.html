@@ -287,6 +287,59 @@ body{
   pointer-events:none;box-shadow:0 4px 24px rgba(0,0,0,.22);
 }
 .toast.show{transform:translateY(0);opacity:1}
+
+/* MOBILE RESPONSIVE IMPROVEMENTS */
+@media (max-width: 768px){
+  #app{
+    max-width:100% !important;
+    width:100% !important;
+    height:100dvh !important;
+    max-height:100dvh !important;
+    border-radius:0 !important;
+  }
+
+  .auth-top,.auth-body,.home-hdr,.det-hdr,.off-hdr,.my-hdr,.prof-hdr{
+    padding-left:16px !important;
+    padding-right:16px !important;
+  }
+
+  .sec-title{padding-left:16px !important;padding-right:16px !important;}
+
+  .role-row,.sbtnrow2,.statrow{
+    flex-direction:column;
+  }
+
+  .dgrid{
+    grid-template-columns:1fr !important;
+  }
+
+  .det-foot{
+    padding-left:16px !important;
+    padding-right:16px !important;
+    gap:12px;
+  }
+
+  .fp{font-size:22px !important;}
+
+  .btn-book{
+    flex:1;
+    min-width:140px;
+  }
+
+  .splash-title{font-size:34px !important;}
+  .htitle,.otitle,.myt,.pname,.dn{font-size:22px !important;}
+
+  .rcard,.dcard,.mycard{
+    margin-left:10px !important;
+    margin-right:10px !important;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+}
+
 </style>
 </head>
 <body>
