@@ -430,7 +430,7 @@ body{
     <p class="sec-title">&#10024; Caronas populares hoje</p>
     <div class="rcard" onclick="goDetail('AC')">
       <div class="rtop">
-        <div class="drow"><div class="av">AC</div><div><p class="dname">Ana Carolina</p><p class="dstar">&#11088; 4.9 &middot; 87 avalia&#231;&#245;es</p></div></div>
+        <div class="drow"><div class="av">AC</div><div><p class="dname">Ana Carolina</p><p class="dstar">&#11088; 4.9 &middot; 87 avaliações</p></div></div>
         <div class="pcol"><p class="pbig">R$8,50</p><p class="psm">por vaga</p></div>
       </div>
       <div class="rroute">
@@ -536,7 +536,7 @@ body{
         <button class="btn-main" onclick="onext(2)">Pr&#243;ximo &#8594;</button>
       </div>
       <div id="os2" style="display:none">
-        <p class="stitle">2. Data e hor&#225;rio</p>
+        <p class="stitle">2. Data e horário</p>
         <label class="flabel">DATA</label>
         <div class="iwrap"><span class="iico">&#128197;</span><input type="date" id="odate"></div>
         <label class="flabel">HOR&#193;RIO DE PARTIDA</label>
@@ -545,7 +545,7 @@ body{
       </div>
       <div id="os3" style="display:none">
         <p class="stitle">3. Detalhes da carona</p>
-        <label class="flabel">VAGAS DISPON&#205;VEIS</label>
+        <label class="flabel">VAGAS DISPONÍVEIS</label>
         <div class="sbtnrow2">
           <button class="sbtn2 sel" onclick="selS(this)">1</button>
           <button class="sbtn2" onclick="selS(this)">2</button>
@@ -556,7 +556,7 @@ body{
         <div class="iwrap"><span class="iico">&#128176;</span><input type="number" id="oprice" placeholder="Ex: 8.50" step="0.50" min="0" inputmode="decimal"></div>
         <label class="flabel">SEU VE&#205;CULO</label>
         <div class="iwrap"><span class="iico">&#128663;</span><input type="text" id="ocar" placeholder="Ex: Honda Fit Branco"></div>
-        <button class="btn-main" style="margin-top:28px" onclick="pubRide()">Publicar carona &#127800;</button>
+        <button class="btn-main" style="margin-top:28px" onclick="pubRide()">Publicar carona </button>
       </div>
     </div>
   </div>
@@ -663,9 +663,9 @@ body{
 <script>
 'use strict';
 const _h=[],_r={
-  AC:{i:'AC',n:'Ana Carolina',st:'&#11088; 4.9 &middot; 87 avalia&#231;&#245;es',o:'&#201;den',d:'Facens',t:'Hoje, 07:30',c:'Honda Fit Branco',pl:'ABC-1234',s:'2 dispon&#237;veis',p:'R$ 8,50'},
-  CT:{i:'CT',n:'Camila Torres',st:'&#11088; 5.0 &middot; 124 avalia&#231;&#245;es',o:'Av. S&#227;o Paulo',d:'Facens',t:'Hoje, 08:00',c:'Corolla Prata',pl:'DEF-5678',s:'1 dispon&#237;vel',p:'R$ 10,00'},
-  JS:{i:'JS',n:'Julia Santos',st:'&#11088; 4.8 &middot; 52 avalia&#231;&#245;es',o:'Centro',d:'UNISO',t:'Hoje, 07:45',c:'Gol Preto',pl:'GHI-9012',s:'3 dispon&#237;veis',p:'R$ 7,00'}
+  AC:{i:'AC',n:'Ana Carolina',st:'⭐ 4.9 · 87 avaliações',o:'éden',d:'Facens',t:'Hoje, 07:30',c:'Honda Fit Branco',pl:'ABC-1234',s:'2 disponíveis',p:'R$ 8,50'},
+  CT:{i:'CT',n:'Camila Torres',st:'⭐ 5.0 · 124 avaliações',o:'Av. São Paulo',d:'Facens',t:'Hoje, 08:00',c:'Corolla Prata',pl:'DEF-5678',s:'1 disponível',p:'R$ 10,00'},
+  JS:{i:'JS',n:'Julia Santos',st:'⭐ 4.8 · 52 avaliações',o:'Centro',d:'Iguatemi',t:'Hoje, 07:45',c:'Gol Preto',pl:'GHI-9012',s:'3 disponíveis',p:'R$ 7,00'}
 };
 let _cur='splash',_role='pass';
 const $=id=>document.getElementById(id);
@@ -742,9 +742,9 @@ function bookRide(){openM('mbooked');}
 function openSearch(){$('sdate').value=new Date().toISOString().split('T')[0];openM('msearch');}
 function doSearch(){
   const o=$('so').value.trim(),d=$('sd').value.trim();
-  if(o)$('orig-txt').textContent='&#128205; '+o;
-  if(d)$('dest-txt').textContent='&#127919; '+d;
-  closeM('msearch');showToast('&#128269;','Buscando caronas...');
+  if(o)$('orig-txt').textContent=' '+o;
+  if(d)$('dest-txt').textContent=''+d;
+  closeM('msearch');showToast('','Buscando caronas...');
 }
 
 function onext(n){
