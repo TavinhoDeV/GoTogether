@@ -358,7 +358,7 @@ body{
       <button class="btn-primary" onclick="goTo('login')">Entrar</button>
       <button class="btn-outline" onclick="goTo('cadastro')">Criar conta</button>
     </div>
-    <p class="splash-ver">Prot&#243;tipo &mdash; GoTogether v1.0 &#127800;</p>
+    <p class="splash-ver">Prot&#243;tipo &mdash; GoTogether v1.0 </p>
   </div>
 </div>
 
@@ -716,7 +716,7 @@ function doCad(){
   $('pname').textContent=n.split(' ')[0];
   $('pemail').textContent=e;
   $('pav').textContent=n.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
-  showToast('&#127800;','Conta criada com sucesso!');
+  showToast('','Conta criada com sucesso!');
   setTimeout(()=>{_h.length=0;['login','cadastro'].forEach(s=>{const el=$('screen-'+s);if(el)el.classList.remove('active');});tab('home',0);},650);
 }
 function doLogout(){
